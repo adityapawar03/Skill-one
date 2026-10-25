@@ -1,0 +1,54 @@
+Algo-Certify 
+A certificate verification system built on the Algorand blockchain. Institutions can issue digital certificates, and anyone can verify their authenticity instantly, with no middlemen and no forgery.
+
+Problem 
+Fake certificates and degrees are a real problem. Verifying a certificate today usually means emailing the issuer and waiting days for a reply.
+
+Solution 
+Algo-Certify stores a cryptographic hash of each certificate on the Algorand blockchain. To verify a certificate, we hash the document again and compare it with the on-chain record. If they match, the certificate is genuine.
+
+Features (Planned) 
+
+- Issue a certificate (store its hash on Algorand)
+- Verify a certificate by uploading the file or entering its ID
+- Revoke a certificate if it was issued by mistake
+- Simple web interface
+
+Tech Stack 
+
+- Blockchain: Algorand (TestNet for development)
+- Smart contracts: PyTeal / AlgoKit
+- SDK: py-algorand-sdk or algosdk (JavaScript)
+- Frontend: React (planned)
+                        
+Project Structure 
+algo-certify/
+├── contracts/     # Smart contract code
+├── scripts/       # Deployment and helper scripts
+├── frontend/      # Web interface (coming soon)
+└── README.md
+
+Getting Started 
+
+```bash
+
+Clone the repository 
+git clone https://github.com/adityapawar03/Skill-one.git
+```
+
+Setup instructions will be added as development progresses.
+
+Roadmap 
+- [x] Create repository and define project scope
+- [ ] Write the smart contract for issuing certificates
+- [ ] Add verification logic
+- [ ] Deploy on Algorand TestNet
+- [ ] Build the frontend
+- [ ] Add revocation support
+
+Author  
+<Your-name>
+
+License 
+
+MIT
