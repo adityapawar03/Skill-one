@@ -1,8 +1,0 @@
-My First GitHub Project.
-This repository is created to learn Git and GitHub.
-
-My Goal:
-1. Learn how to create repositories.
-2. Learn how to add files.
-3. Learn how to make commits.
-4. Learn how to track my project changes.
